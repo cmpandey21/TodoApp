@@ -32,7 +32,7 @@ public class TodoController {
 		return "listTodos";
 	}
 
-	//GET, POST
+	//Get, POST
 	@RequestMapping(value="add-todo", method = RequestMethod.GET)
 	public String showNewTodoPage(ModelMap model) {
 		String username = (String)model.get("name");
